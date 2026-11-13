@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A CSS illustration of a chat app for booking dog walks, built with HTML and CSS.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Chat app CSS illustration</title>
+</head>
+<body>
+  <div class="page">
+    <div class="blob blob--purple" aria-hidden="true"></div>
+    <div class="blob blob--light" aria-hidden="true"></div>
+
+    <main class="layout">
+      <div class="phone" role="group" aria-label="Chat illustration with dog walker Samuel Green">
+        <div class="phone__screen">
+          <header class="chat-header">
+            <span class="notch" aria-hidden="true"></span>
+
+            <button class="back" type="button" aria-label="Go back">
+              <span class="back__arrow" aria-hidden="true"></span>
+            </button>
+
+            <img class="avatar" src="./images/avatar.jpg" alt="Samuel Green" width="24" height="24">
+
+            <div class="contact">
+              <p class="contact__name">Samuel Green</p>
+              <p class="contact__status">Available to Walk</p>
+            </div>
+
+            <button class="menu" type="button" aria-label="More options">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </button>
+          </header>
+
+          <div class="chat">
+            <p class="msg msg--in">That sounds great. I&rsquo;d be happy with that.</p>
+            <p class="msg msg--in">Could you send over some pictures of your dog, please?</p>
+
+            <div class="msg msg--out msg--photos">
+              <img src="./images/dog-image-1.jpg" alt="A happy brown dog" width="39" height="39">
+              <img src="./images/dog-image-2.jpg" alt="A happy dog sitting outdoors" width="39" height="39">
+              <img src="./images/dog-image-3.jpg" alt="A happy dog looking at the camera" width="39" height="39">
+            </div>
+
+            <p class="msg msg--out">Here are a few pictures. She&rsquo;s a happy girl!</p>
+            <p class="msg msg--out">Can you make it?</p>
+
+            <p class="msg msg--in">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+
+            <button class="offer" type="button">
+              <span class="offer__radio" aria-hidden="true"></span>
+              <span class="offer__label">30 minute walk</span>
+              <span class="offer__price">$29</span>
+            </button>
+
+            <button class="offer" type="button">
+              <span class="offer__radio" aria-hidden="true"></span>
+              <span class="offer__label">1 hour walk</span>
+              <span class="offer__price">$49</span>
+            </button>
+
+            <div class="composer">
+              <label class="sr-only" for="message">Type a message</label>
+              <input class="composer__input" id="message" type="text" placeholder="Type a message&hellip;" autocomplete="off">
+              <button class="composer__send" type="button" aria-label="Send message">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 13.5V3.5M3.4 8.1 8 3.5l4.6 4.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="content">
+        <h1 class="content__title">Simple booking</h1>
+        <p class="content__text">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </div>
+</body>
+</html>
